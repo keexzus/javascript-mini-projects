@@ -38,6 +38,7 @@ if (computerChoice === playerChoice) {
     wins++
 } else {
     console.log("You Lost!");
+    losses++
 }
 }
 console.log("Wins: ", wins, "Losses: ", losses, "Ties: ", ties)
