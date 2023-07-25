@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 let correct_answers = 0;
-const total_questions = 3
+const total_questions = 4
 console.log("welcome to the quiz!");
 
 const answer_1 = prompt("what is the brain of the computer? ");
@@ -32,6 +32,18 @@ if (answer_3.toUpperCase() === correct_answer_3) {
 } else {
     console.log("Wrong answer, buddy.")
 }
+
+const answer_4 = prompt("Who is the best baseball player? (last name only) ");
+const correct_answer4 = "OHTANI";
+
+if (answer_4.toUpperCase() === correct_answer4) {
+    console.log("Correct, man! Good job.")
+    correct_answers ++;
+} else {
+    console.log("Really, man? C'mon!")
+}
+
+
 const percent = Math.round((correct_answers / total_questions) * 100);
 
 console.log("You scored", percent , "percent! Cool beans.")
